@@ -19,7 +19,7 @@ namespace XPerts.TvShows.Api.Extensions
         {
             return services
                 .AddScoped<ISqlConnectionProvider, SqlConnectionProvider>()
-                .AddScoped<ISqlStatementExecutor, SqlStatementExecutor>()
+                .AddScoped<IStatementExecutor, SqlStatementExecutor>()
 
                 .AddScoped<IStatementConstructor<TvShow>, TvShowStatementConstructor>()
                 .AddScoped<IStatementConstructor<Genre>, GenreStatementConstructor>()

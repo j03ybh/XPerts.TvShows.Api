@@ -24,7 +24,7 @@ namespace XPertz.TvShows.Database.Migrator
                 .AddScoped<ITvShowSyncFilter, TvShowSyncFilter>()
                 .AddScoped<ITvShowSyncReader, TvShowSyncReader>()
                 .AddScoped<ITvShowSyncWriter, TvShowSyncWriter>()
-                .AddScoped<ISqlStatementExecutor, SqlStatementExecutor>()
+                .AddScoped<IStatementExecutor, SqlStatementExecutor>()
                 .AddScoped<ISqlConnectionProvider, DatabaseSyncConnectionProvider>()
 
                 .AddScoped<IModelMapper<TvShow>, TvShowMapper>()

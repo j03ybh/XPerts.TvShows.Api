@@ -1,13 +1,12 @@
 ﻿using TechMinimalists.Database.Core.Interfaces;
-using TechMinimalists.Database.Sql;
-using TechMinimalists.Database.Sql.Interfaces;
+using TechMinimalists.Database.Repositories;
 using XPerts.TvShows.Models;
 
 namespace XPertz.TvShows.Repositories
 {
-    public sealed class TvShowRepository : SqlReadWriteRepository<TvShow>
+    public sealed class TvShowRepository : ReadWriteRepository<TvShow>
     {
-        public TvShowRepository(ISqlStatementExecutor executor, IModelMapper<TvShow> mapper, IStatementConstructor<TvShow> statementBuilder)
+        public TvShowRepository(IStatementExecutor executor, IModelMapper<TvShow> mapper, IStatementConstructor<TvShow> statementBuilder)
             : base(executor, mapper, statementBuilder)
         {
         }

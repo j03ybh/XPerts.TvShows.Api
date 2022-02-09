@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
 using TechMinimalists.Database.Core.Interfaces;
-using TechMinimalists.Database.Sql.Interfaces;
 using XPerts.TvShows.Database;
 using XPerts.TvShows.Models;
 using XPertz.TvShows.Database.Migrator.Extensions;
@@ -10,12 +9,12 @@ namespace XPertz.TvShows.Database.Migrator.Sync
     public class TvShowSyncWriter : ITvShowSyncWriter
     {
         private readonly ILogger _logger;
-        private readonly ISqlStatementExecutor _statementExecutor;
+        private readonly IStatementExecutor _statementExecutor;
         private readonly IModelMapper<Genre> _genreDataMapper;
         private readonly IModelMapper<TvShow> _tvShowDataMapper;
         private readonly IModelMapper<TvShowGenre> _tvShowGenreDataMapper;
 
-        public TvShowSyncWriter(ILogger<TvShowSyncWriter> logger, ISqlStatementExecutor statementExecutor, IModelMapper<Genre> genreDataMapper, IModelMapper<TvShow> tvShowDataMapper, IModelMapper<TvShowGenre> tvShowGenreDataMapper)
+        public TvShowSyncWriter(ILogger<TvShowSyncWriter> logger, IStatementExecutor statementExecutor, IModelMapper<Genre> genreDataMapper, IModelMapper<TvShow> tvShowDataMapper, IModelMapper<TvShowGenre> tvShowGenreDataMapper)
         {
             _logger = logger;
             _statementExecutor = statementExecutor;

@@ -15,8 +15,7 @@ namespace XPerts.TvShows.Database
             PremieredOn date NULL,
             ManuallyCreated bit NOT NULL DEFAULT(1),
             OriginId bigint NULL,
-            INDEX premieredOn_index_tvshow CLUSTERED (PremieredOn DESC),
-            INDEX tvshow_name_index NONCLUSTERED (Name)
+            INDEX premieredOn_index_tvshow CLUSTERED (PremieredOn DESC)
         ";
     }
 }
