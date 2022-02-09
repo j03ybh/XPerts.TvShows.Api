@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32002.185
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPerts.TvShows.Models", "src\XPerts.TvShows.Models.csproj", "{30047A91-53FD-467A-B89D-09D9366B15D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8A88AF5A-8312-42AE-8F07-666D538351F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30047A91-53FD-467A-B89D-09D9366B15D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30047A91-53FD-467A-B89D-09D9366B15D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30047A91-53FD-467A-B89D-09D9366B15D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30047A91-53FD-467A-B89D-09D9366B15D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30047A91-53FD-467A-B89D-09D9366B15D7} = {8A88AF5A-8312-42AE-8F07-666D538351F9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A4519B51-9A88-4678-9CD0-BC40DAC84009}
+	EndGlobalSection
+EndGlobal

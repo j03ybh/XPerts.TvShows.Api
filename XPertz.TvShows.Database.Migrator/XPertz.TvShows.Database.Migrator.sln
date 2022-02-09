@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32002.185
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPertz.TvShows.Database.Migrator", "src\XPertz.TvShows.Database.Migrator.csproj", "{B56D6E03-69DB-45BF-B237-88CE821B75DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{00DAC651-BBD7-4F0A-B468-92AFAD14B44D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B56D6E03-69DB-45BF-B237-88CE821B75DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B56D6E03-69DB-45BF-B237-88CE821B75DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B56D6E03-69DB-45BF-B237-88CE821B75DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B56D6E03-69DB-45BF-B237-88CE821B75DE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B56D6E03-69DB-45BF-B237-88CE821B75DE} = {00DAC651-BBD7-4F0A-B468-92AFAD14B44D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3BC9B9F-3975-4092-B7F1-81F67C7B49DC}
+	EndGlobalSection
+EndGlobal

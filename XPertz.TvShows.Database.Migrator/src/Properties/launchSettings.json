@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "XPertz.TvShows.Database.Migrator": {
+      "commandName": "Project",
+      "commandLineArgs": "sync-data"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32002.185
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XPertz.TvShows.Mappers", "src\XPertz.TvShows.Mappers.csproj", "{FBCF5701-4EA9-455E-846B-FA25830A10C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{466346E4-4F50-42ED-9F33-5B70A8CC39DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FBCF5701-4EA9-455E-846B-FA25830A10C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBCF5701-4EA9-455E-846B-FA25830A10C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBCF5701-4EA9-455E-846B-FA25830A10C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBCF5701-4EA9-455E-846B-FA25830A10C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FBCF5701-4EA9-455E-846B-FA25830A10C8} = {466346E4-4F50-42ED-9F33-5B70A8CC39DF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91370CAD-DD4C-4206-9D10-A53416587A70}
+	EndGlobalSection
+EndGlobal
