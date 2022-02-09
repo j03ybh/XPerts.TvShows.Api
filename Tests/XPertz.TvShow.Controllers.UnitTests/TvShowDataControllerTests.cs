@@ -8,6 +8,7 @@ using System.Net;
 using System.Threading.Tasks;
 using TechMinimalists.Database.Configuration;
 using TechMinimalists.Database.Core;
+using TechMinimalists.Database.Core.Interfaces;
 using TechMinimalists.Database.Sql;
 using TechMinimalists.Database.Sql.Configuration;
 using TechMinimalists.Database.Sql.Interfaces;
@@ -30,7 +31,7 @@ namespace XPertz.TvShows.Controllers.UnitTests
         private static readonly string _databaseName = "TestingEverything";
         private SqlTestDatabase _database;
         private TvShowDataController _testSubject;
-        private ISqlStatementExecutor _statementExecutor;
+        private IStatementExecutor _statementExecutor;
         private IMemoryCache _cache;
         private PageCollection<TvShowView> _pageCollection;
 

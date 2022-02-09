@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using TechMinimalists.Database.Core.Interfaces;
 using TechMinimalists.Database.Sql.Interfaces;
 using XPerts.TvShows.Database;
 
@@ -7,9 +8,9 @@ namespace XPertz.TvShows.Database.Migrator.Sync
     public class TvShowSyncReader : ITvShowSyncReader
     {
         private readonly ILogger _logger;
-        private readonly ISqlStatementExecutor _statementExecutor;
+        private readonly IStatementExecutor _statementExecutor;
 
-        public TvShowSyncReader(ILogger<TvShowSyncReader> logger, ISqlStatementExecutor statementExecutor)
+        public TvShowSyncReader(ILogger<TvShowSyncReader> logger, IStatementExecutor statementExecutor)
         {
             _logger = logger;
             _statementExecutor = statementExecutor;

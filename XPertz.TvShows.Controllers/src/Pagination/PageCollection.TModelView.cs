@@ -47,6 +47,8 @@ namespace XPertz.TvShows.Controllers
         {
             if (pageFactory is null)
                 throw new ArgumentNullException(nameof(pageFactory));
+            if (pageNumber <= 0)
+                throw new ExceptionResult(System.Net.HttpStatusCode.BadRequest, "Please provide a page number that is greater or equal to 1.");
 
             var pageSize = _options.Value.MaxPageSize;
 
@@ -54,11 +56,7 @@ namespace XPertz.TvShows.Controllers
             {
                 entry.SlidingExpiration = TimeSpan.FromMinutes(5);
 
-                long startIndex;
-                if (pageNumber == 1)
-                    startIndex = 1;
-                else
-                    startIndex = pageNumber * pageSize + 1;
+                long startIndex = (pageNumber - 1) * pageSize + 1;
 
                 long endIndex = startIndex + pageSize - 1;
                 var indexColumnQuery = new PageIndexColumnQuery(nameof(IIndexable.IndexPosition), startIndex, endIndex);

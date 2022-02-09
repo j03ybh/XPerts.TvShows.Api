@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TechMinimalists.Database.Configuration;
 using TechMinimalists.Database.Core;
+using TechMinimalists.Database.Core.Interfaces;
 using TechMinimalists.Database.Sql;
 using TechMinimalists.Database.Sql.Configuration;
 using TechMinimalists.Database.Sql.Interfaces;
@@ -22,7 +23,7 @@ namespace XPertz.TvShows.Repositories.UnitTests
         private static readonly string _databaseName = "TestingEverything";
         private SqlTestDatabase _database;
         private TvShowGenreRepository _testSubject;
-        private ISqlStatementExecutor _statementExecutor;
+        private IStatementExecutor _statementExecutor;
         private TvShowGenreMapper _mapper;
 
         private GenreMapper _genreMapper;

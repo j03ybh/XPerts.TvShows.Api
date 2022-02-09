@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using TechMinimalists.Database.Core.Interfaces;
 using TechMinimalists.Database.Sql.Interfaces;
 using XPerts.TvShows.Database;
 using XPerts.TvShows.Models;
@@ -8,11 +9,11 @@ namespace XPertz.TvShows.Database.Migrator.Sync
 {
     public class TvShowSyncFilter : ITvShowSyncFilter
     {
-        private readonly ISqlStatementExecutor _statementExecutor;
+        private readonly IStatementExecutor _statementExecutor;
         private readonly ILogger _logger;
         private readonly IOptions<TvShowSyncFilterOptions> _options;
 
-        public TvShowSyncFilter(IOptions<TvShowSyncFilterOptions> options, ILogger<TvShowSyncFilter> logger, ISqlStatementExecutor statementExecutor)
+        public TvShowSyncFilter(IOptions<TvShowSyncFilterOptions> options, ILogger<TvShowSyncFilter> logger, IStatementExecutor statementExecutor)
         {
             _logger = logger;
             _options = options;
